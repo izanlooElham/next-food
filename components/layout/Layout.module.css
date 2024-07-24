@@ -1,0 +1,15 @@
+.container {
+    min-height: 1000px;
+  }
+  
+  @media (max-width: 900px) {
+    .header {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .header {
+      padding: 10px;
+    }
+  }
