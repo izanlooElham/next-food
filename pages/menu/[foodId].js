@@ -14,7 +14,7 @@ export default FoodDetails
 
 
 export async function getStaticPaths(){
-    const res=await fetch("http://localhost:3001/data/")
+    const res=await fetch("https://fakestoreapi.com/products")
     const json=await res.json()
     const data=json.slice(0,10)
     
@@ -30,7 +30,7 @@ export async function getStaticPaths(){
 
 export async function getStaticProps(context){
         const {params}=context
-        const res=await fetch(`http://localhost:3001/data/${params.foodId}`)
+        const res=await fetch(`https://fakestoreapi.com/products/${params.foodId}`)
         const data=await res.json()
 
         if(!data.id){

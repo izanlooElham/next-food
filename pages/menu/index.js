@@ -10,7 +10,7 @@ function Menu({foodData}) {
 export default Menu
 
 export async function getStaticProps(){
-    const res=await fetch("http://localhost:3001/data")
+    const res=await fetch("https://fakestoreapi.com/products")
     const foodData=await res.json()
 
     return{

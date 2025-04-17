@@ -26,7 +26,7 @@ function DetailsPage(props) {
               <h3>{name}</h3>
               <span className={styles.location}>
                 <Location />
-                {details[0].Cuisine}
+                {/* {details[0].Cuisine} */}
               </span>
               <span className={styles.price}>
                 <Dollar />
